@@ -1,0 +1,54 @@
+p {
+  font-size: 20px;
+  color: #665AFF;
+  font-style: italic;
+  font-family: 'PT Sans', sans-serif;
+}
+
+h1 {
+  font-style: bold;
+  color: #665AFF;
+  font-family: 'PT Sans', sans-serif;
+  text-align: center;
+}
+
+body {
+  background-color: #ADCE2E;
+}
+
+table {
+  font-size: 20px;
+  color: #00037D;
+  font-family: 'PT Sans', sans-serif;
+
+}
+
+#allTable {
+  margin: auto;
+}
+#newDonutsForm {
+  text-align: center;
+}
+tr:nth-child(even) {
+  background-color: yellow;
+}
+
+td {
+  text-align: right;
+}
+
+#addDonutShop {
+  font-family: 'PT Sans', sans-serif;
+}
+
+#erase {
+  font-family: 'PT Sans', sans-serif;
+  margin-top: 20px;
+  margin-left: 610px;
+}
+
+.formData {
+  color: #00168A;
+  font-family: 'PT Sans', sans-serif;
+
+}
