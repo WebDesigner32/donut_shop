@@ -5,14 +5,34 @@
   <title>Model for Top Pot Donuts!</title>
 </head>
 <body>
-  <table>
+
+  <form id="newDonutsForm">
+    <label for="locationName">Location Name:
+      <input id="locationName" name="location" type="text" />
+    </label>
+
+    <label for="minimumCustomers">Minimum Customers Per Hour:
+      <input id="minimumCustomers" name="minimumCust" type="text" />
+    </label>
+
+    <label for="maximumCustomers">Maximum Customers Per Hour:
+      <input id="maximumCustomers" name="maximumCust" type="text" />
+    </label>
+
+    <label for="averagePurchasedPerCustomer">Average Donuts Purchased Per Customer:
+      <input id="averagePurchasedPerCustomer" name="averageDonutsPurchasedPerCust" type="text">
+    </label>
+    <button id="addDonutShop" type="submit">Submit</button>
+
+  </form>
+
+  <button id="erase">Erase</button>
+
+  <table id="allTable">
     <tr id="openHours"><th></th><td>7:00 AM</td><td>8:00 AM</td><td>9:00 AM</td><td>10:00 AM</td><td>11:00 AM</td><td>12:00 PM</td><td>1:00 PM</td><td>2:00 PM</td><td>3:00 PM</td><td>4:00 PM</td><td>5:00 PM</td><td>6:00 PM</td><td>Total</td></tr>
-    <tr id="storeLoc1"><th>Downtown</th></tr>
-    <tr id="storeLoc2"><th>Capitol Hill</th></tr>
-    <tr id="storeLoc3"><th>South Lake Union</th></tr>
-    <tr id="storeLoc4"><th>Wedgewood</th></tr>
-    <tr id="storeLoc5"><th>Ballard</th></tr>
   </table>
-  <script src="js/donut_shop.js"></script>
+
+  <script src="donut_shop.js"></script>
+  <script src="donut_shop_events.js"></script>
 </body>
 </html>
