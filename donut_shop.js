@@ -1,6 +1,6 @@
 (function () {
 
-  var TopPotDonuts = function (minimum, maximum, avg, name, openHrs) {
+  window.TopPotDonuts = function (minimum, maximum, avg, name, openHrs) {
     this.minimum = minimum;
     this.maximum = maximum;
     this.avg = avg;
