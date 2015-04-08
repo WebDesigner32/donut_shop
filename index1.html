@@ -3,32 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <title>Model for Top Pot Donuts!</title>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="styles.css"></link>
 </head>
 <body>
-
+  <h1>Main Form</h1>
   <form id="newDonutsForm">
-    <label for="locationName">Location Name:</label>
-      <input id="locationName" name="location" type="text">
 
-    <label for="minimumCustomers">Minimum Customers Per Hour:</label>
-      <input id="minimumCustomers" name="minimumCust" type="number">
+      <input id="locationName" name="location" type="text" placeholder="Location Name">
 
-    <label for="maximumCustomers">Maximum Customers Per Hour:</label>
-      <input id="maximumCustomers" name="maximumCust" type="number">
+      <input id="minimumCustomers" name="minimumCust" type="number" placeholder="Minimum Customers Per Hour">
 
-    <label for="averagePurchasedPerCustomer">Average Donuts Purchased Per Customer:</label>
-      <input id="averagePurchasedPerCustomer" name="averageDonutsPurchasedPerCust" type="number">
+      <input id="maximumCustomers" name="maximumCust" type="number" placeholder="Maximum Customers Per Hour">
+
+      <input id="averagePurchasedPerCustomer" name="averageDonutsPurchasedPerCust" type="number" placeholder="Avg Donuts Per Customer">
 
     <button id="addDonutShop" type="submit">Submit</button>
 
   </form>
+  <p id=formParagraph>This form will allow you to enter a new location for a Top Pot Donuts shop with numeric data. Your input will be appended to the table as a new row. If you click Submit continously or the Enter key, you will get new results for the table data. Finally, you can delete what you added using the Erase button just under this paragraph.</p>
 
-    <button id="erase">Erase</button>
-
+  <h1 id="tableHeader">Top Pot Donuts Calculator</h1>
   <table id="allTable">
-    <tr id="openHours"><th></th><td>7:00 AM</td><td>8:00 AM</td><td>9:00 AM</td><td>10:00 AM</td><td>11:00 AM</td><td>12:00 PM</td><td>1:00 PM</td><td>2:00 PM</td><td>3:00 PM</td><td>4:00 PM</td><td>5:00 PM</td><td>6:00 PM</td><td>Total</td></tr>
+    <tr id="openHours"><th></th><td class="data">7:00 AM</td><td class="data">8:00 AM</td><td class="data">9:00 AM</td><td class="data">10:00 AM</td><td class="data">11:00 AM</td><td class="data">12:00 PM</td><td class="data">1:00 PM</td><td class="data">2:00 PM</td><td class="data">3:00 PM</td><td class="data">4:00 PM</td><td class="data">5:00 PM</td><td class="data">6:00 PM</td><td class="data">Total</td></tr>
   </table>
 
+  <button id="erase">Erase</button>
+
+  <p id=tableParagraph>In this table, you will see the main 5 locations in Seattle for Top Pot Donuts with corresponding numeric data for every hour the shops are open. The total is calculated in the last column. Keep in mind that there is no reason to list 6:00 PM because a consumer cannot have donuts in an hour the time the store closes!</p>
   <script src="donut_shop.js"></script>
   <script src="donut_shop_events.js"></script>
 </body>
