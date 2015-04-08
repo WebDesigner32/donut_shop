@@ -11,25 +11,26 @@
     shops = [];
     shops.push(new TopPotDonuts(8, 43, 4.50, "Downtown"));
     shops.push(new TopPotDonuts(4, 37, 2.00, "Capitol Hill"));
-    stores.push(new TopPotDonuts(9, 23, 6.33, "South Lake Union"));
-    stores.push(new TopPotDonuts(2, 28, 1.25, "Wedgewood"));
-    stores.push(new TopPotDonuts(8, 58, 3.75, "Ballard"));
+    shops.push(new TopPotDonuts(9, 23, 6.33, "South Lake Union"));
+    shops.push(new TopPotDonuts(2, 28, 1.25, "Wedgewood"));
+    shops.push(new TopPotDonuts(8, 58, 3.75, "Ballard"));
     tableRender();
   })
 
 
+   donutForm.addEventListener('submit', function(event) {
 
-   donutForm.addEventListener('submit', function() {
+    event.preventDefault();
 
-    window.shops.push(new window.TopPotDonuts (event.target.name.value, Number.parseInt(event.target.minimum.value), Number.parseInt(event.target.maximum.value), Number.parseInt(event.target.avg.value)));
+    window.shops.push(new TopPotDonuts(parseInt(event.target.minimumCust.value,10), parseInt(event.target.maximumCust.value,10), parseInt(event.target.averageDonutsPurchasedPerCust.value,10),event.target.location.value));
 
-      event.target.name.value = null;
-      event.target.minimum.value = null;
-      event.target.maximum.value = null;
-      event.target.avg.value = null;
+      event.target.location.value = null;
+      event.target.minimumCust.value = null;
+      event.target.maximumCust.value = null;
+      event.target.averageDonutsPurchasedPerCust.value = null;
       window.tableRender();
 
-      event.preventDefault();
+
    });
 
 }) ();
