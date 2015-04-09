@@ -3,6 +3,16 @@ p {
   color: #665AFF;
   font-style: italic;
   font-family: 'PT Sans', sans-serif;
+
+}
+
+#formPara {
+  margin-top: 70px;
+}
+
+#tablePara {
+  margin-top: 50px;
+  position: relative;
 }
 
 h1 {
@@ -14,6 +24,8 @@ h1 {
 
 body {
   background-color: #ADCE2E;
+  width: 960px;
+  margin: 0 auto;
 }
 
 table {
@@ -28,6 +40,8 @@ table {
 }
 #newDonutsForm {
   text-align: center;
+  position: fixed;
+  margin-left: 180px;
 }
 tr:nth-child(even) {
   background-color: yellow;
@@ -43,8 +57,8 @@ td {
 
 #erase {
   font-family: 'PT Sans', sans-serif;
-  margin-top: 20px;
-  margin-left: 610px;
+  margin: 20px auto;
+  position: absolute;
 }
 
 .formData {
@@ -52,3 +66,5 @@ td {
   font-family: 'PT Sans', sans-serif;
 
 }
+
+
