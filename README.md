@@ -9,7 +9,7 @@ I am required to give attribution to the people and organizations that inspired 
 1. Google Fonts
 2. Adobe Color CC
 3. TA's (Artistic Suggestions)
-4. The Homer Simpson Picture: http://i.ytimg.com/vi/8heHy8hVc6I/hqdefault.jpg (Got from Google Search)
+4. The Homer Simpson Picture: http://bustedhalo.com/dailyjolt/lent-2014-march-21 (Got from Google Search)
 5. One of the provided example sites for the animations portion of this Project, http://codepen.io/akshaychauhan/pen/oAfae, inspired me to use their code and remodel bits of it with my own creativity.
 
 It is worth mentioning that I have given the webpage a fixed width of 960px. I have applied the following types of positioning to the following 3 HTML elements for my web page:
