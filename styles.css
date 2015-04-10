@@ -90,12 +90,11 @@ img:hover {
   background-color:#ADCE2E;
   border-radius:14px;
 }
-.littleHomie{
+.littleHomie {
   position:absolute;
   height: 200px;
   width:200px;
   border-radius:20px;
-  background-color:#0007D7;
 }
 
 @-webkit-keyframes bounces{
@@ -138,7 +137,7 @@ img:hover {
   -webkit-animation-timing-function: ease-out;
 
 }
-@-moz-keyframes bouncing{
+@-moz-keyframes bounces{
 
 40%,70%,90% {
 
