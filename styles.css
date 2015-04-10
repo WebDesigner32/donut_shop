@@ -64,7 +64,117 @@ td {
 .formData {
   color: #00168A;
   font-family: 'PT Sans', sans-serif;
+}
+
+img {
+ transform: rotate(20deg) scale(1.1);
+  border-radius: 50px;
+  transition: .2s linear, border-radius .5s ease-in .5s;
+  margin-top: 70px;
+  }
+
+img:hover {
+  transform: rotate(180deg);
+  border-radius: 50%;
+}
+
+.bounceDiv{
+  height: 150px;
+  width:150px;
+  border:0px solid rgba(0,0,0,0.5);
+  float:right;
+  margin:40px;
+  margin-right: 380px;
+  margin-top: 300px;
+  position:relative;
+  background-color:#ADCE2E;
+  border-radius:14px;
+}
+.littleHomie{
+  position:absolute;
+  height: 200px;
+  width:200px;
+  border-radius:20px;
+  background-color:#0007D7;
+}
+
+@-webkit-keyframes bounces{
+
+40%,70%,90% {
+
+  bottom:0;
+  -webkit-animation-timing-function: ease-out;
+
+}
+0%{
+
+  bottom:200px;
+  left:0;
+  -webkit-animation-timing-function: ease-in;
 
 }
 
+55%{
 
+  bottom:50px;
+  -webkit-animation-timing-function: ease-in;
+
+}
+80%{
+
+  bottom:25px;
+  -webkit-animation-timing-function: ease-in;
+
+}
+95%{
+
+  bottom:10px;
+  -webkit-animation-timing-function: ease-out;
+
+}
+100%{
+  left:110px;
+  bottom:0;
+  -webkit-animation-timing-function: ease-out;
+
+}
+@-moz-keyframes bouncing{
+
+40%,70%,90% {
+
+  bottom:0;
+  -webkit-animation-timing-function: ease-out;
+
+}
+0%{
+
+  bottom:200px;
+  left:0;
+  -webkit-animation-timing-function: ease-in;
+
+}
+
+55%{
+
+  bottom:50px;
+  -webkit-animation-timing-function: ease-in;
+
+}
+80%{
+
+  bottom:25px;
+  -webkit-animation-timing-function: ease-in;
+
+}
+95%{
+
+  bottom:10px;
+  -webkit-animation-timing-function: ease-out;
+
+}
+100%{
+  left:110px;
+  bottom:0;
+  -webkit-animation-timing-function: ease-out;
+
+}
